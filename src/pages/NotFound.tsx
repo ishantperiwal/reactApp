@@ -8,7 +8,7 @@ const NotFound: React.FC = () => {
     // Automatically redirect to home after 2 seconds
     const timer = setTimeout(() => {
       navigate('/');
-    }, 2000);
+    }, 0);
 
     // Cleanup the timer on unmount
     return () => clearTimeout(timer);
